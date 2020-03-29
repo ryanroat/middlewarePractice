@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ryanroat/middlewarePractice/issues"
   },
-  "homepage": "https://github.com/ryanroat/middlewarePractice#readme"
+  "homepage": "https://github.com/ryanroat/middlewarePractice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
