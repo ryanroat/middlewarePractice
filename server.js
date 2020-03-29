@@ -5,7 +5,7 @@ const app = express();
 app.use(logMW);
 
 app.get('/', (req, res) => {
-    res.send(`${new Date().toISOString()}: ${req.originalUrl}`);
+    res.send(`Index`);
 });
 
 app.get('/users', (req, res) => {
@@ -18,6 +18,7 @@ app.get('/test', (req, res) => {
 
 function logMW(req, res, next) {
     // console.log('MW...');
+    // res.send(`${new Date().toISOString()}: ${req.originalUrl}`);
     console.log(`${new Date().toISOString()}: ${req.originalUrl}`);
     next();
 }
